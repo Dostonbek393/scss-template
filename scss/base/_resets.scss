@@ -24,7 +24,7 @@ ol {
 
 a {
   display: inline-block;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 img {
@@ -36,10 +36,6 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
-  // font-size: ;
-  // font-family: ;
-  // font-weight: ;
-  // line-height: ;
 }
 
 main {
