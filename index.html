@@ -3,57 +3,260 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Website name</title>
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body class="text-preset-5">
-    <div class="header">
+    <header class="header">
+      <div class="header__logo">
+        <div class="header__logo__container container">
+          <a class="site-logo" href="">
+            <img src="./images/Logo.svg" alt="" width="193" height="36" />
+          </a>
+        </div>
+      </div>
+
       <div class="header__hero">
         <div class="header__hero__container container">
-          <div class="header__logo">
-            <a class="site-logo" href="">
-              <img src="./images/Logo.svg" alt="" width="193" height="36" />
+          <div class="header__hero__content">
+            <h1 class="header__hero__title text-preset-1">
+              Join the ultimate tech book club
+            </h1>
+            <p class="header__hero__text text-preset-5">
+              Turn your reading time into learning time with fellow tech
+              enthusiasts. Get curated recommendations, join vibrant
+              discussions, and level up your skills one chapter at a time.
+            </p>
+            <a class="btn header__hero-btn" href="">
+              <span class="btn-text text-preset-6"
+                >REVIEW MEMBERSHIP OPTIONS</span
+              >
+            </a>
+
+            <div class="header__hero__members">
+              <img
+                src="./images/image-avatars.webp"
+                alt=""
+                width="110"
+                height="40"
+              />
+              <div class="header__hero__members__wrapper">
+                <div class="header__hero__members__stars">
+                  <span
+                    ><img
+                      class="header__hero__members__stars__btn"
+                      src="./images/icon-star.svg"
+                      alt=""
+                  /></span>
+                  <span
+                    ><img
+                      class="header__hero__members__stars__btn"
+                      src="./images/icon-star.svg"
+                      alt=""
+                  /></span>
+                  <span
+                    ><img
+                      class="header__hero__members__stars__btn"
+                      src="./images/icon-star.svg"
+                      alt=""
+                  /></span>
+                  <span
+                    ><img
+                      class="header__hero__members__stars__btn"
+                      src="./images/icon-star.svg"
+                      alt=""
+                  /></span>
+                  <span
+                    ><img
+                      class="header__hero__members__stars__btn"
+                      src="./images/icon-star.svg"
+                      alt=""
+                  /></span>
+                </div>
+                <p class="header__hero__members__text text-preset-7">
+                  200+ developers joined already
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <picture>
+            <source
+              srcset="./images/image-hero-mobile.webp"
+              media="(max-width:375px)"
+            />
+            <source
+              srcset="./images/image-hero-tablet.webp"
+              media="(max-width:850px)"
+            />
+            <img
+              class="header__hero__image"
+              src="./images/image-hero-desktop.webp"
+              alt="Some People read books"
+            />
+          </picture>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="sidebar">
+        <div class="sidebar__container container">
+          <picture>
+            <source
+              srcset="./images/image-read-together-mobile.webp"
+              media="(max-width:375px)"
+            />
+            <source
+              srcset="./images/image-read-together-tablet.webp"
+              media="(max-width:850px)"
+            />
+            <img
+              class="sidebar__image"
+              src="./images/image-read-together-desktop.webp"
+              alt="Read together"
+            />
+          </picture>
+
+          <div class="sidebar__text">
+            <h1 class="sidebar__text-one text-preset-2">
+              Read together, grow together
+            </h1>
+            <div class="sidebar__discription">
+              <img
+                class="sidebar__image-button"
+                src="./images/icon-check.svg"
+                alt=""
+              />
+              <p class="sidebar__texts text-preset-5">
+                Monthly curated tech reads selected by industry experts
+              </p>
+            </div>
+            <div class="sidebar__discription">
+              <img
+                class="sidebar__image-button"
+                src="./images/icon-check.svg"
+                alt=""
+              />
+              <p class="sidebar__texts text-preset-5">
+                Virtual and in-person meetups for deep-dive discussions
+              </p>
+            </div>
+            <div class="sidebar__discription">
+              <img
+                class="sidebar__image-button"
+                src="./images/icon-check.svg"
+                alt=""
+              />
+              <p class="sidebar__texts text-preset-5">
+                Early access to new tech book releases
+              </p>
+            </div>
+            <div class="sidebar__discription">
+              <img
+                class="sidebar__image-button"
+                src="./images/icon-check.svg"
+                alt=""
+              />
+              <p class="sidebar__texts text-preset-5">
+                Author Q&A sessions with tech thought leaders
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner">
+        <div class="banner__container container">
+          <div class="banner__title">
+            <h2 class="banner__text text-preset-2">
+              Not your average book club
+            </h2>
+            <p class="banner__texts text-preset-5">
+              Connect with a community that speaks your language - from
+              <b>Python</b> to <b>TypeScript</b> and everything in between. Our
+              discussions blend technical depth with practical applications.
+            </p>
+          </div>
+
+          <picture>
+            <source
+              srcset="./images/image-not-average-mobile.webp"
+              media="(max-width:375px)"
+            />
+            <source
+              srcset="./images/image-not-average-tablet.webp"
+              media="(max-width:850px)"
+            />
+            <img
+              class="banner__image"
+              src="./images/image-not-average-desktop.webp"
+              alt="Book club"
+            />
+          </picture>
+        </div>
+      </div>
+    </main>
+
+    <div class="card">
+      <div class="card__container container">
+        <h1 class="card__text">Membership options</h1>
+        <div class="card__discription">
+          <div class="card__one">
+            <h3 class="card__texts text-preset-4">Starter</h3>
+            <div class="card__text-one">
+              <h2 class="card__texts-one text-preset-3">$19</h2>
+              <p class="card__text-title text-preset-5">/month</p>
+            </div>
+
+            <div class="card__title">
+              <img src="./images/icon-check.svg" alt="" />
+              <p class="card__text-title text-preset-5">1 book/month</p>
+            </div>
+            <div class="card__titles">
+              <img src="./images/icon-check.svg" alt="" />
+              <p class="card__text-title text-preset-5">Online forums</p>
+            </div>
+            <a class="card__button" href="">
+              <span class="card__button-text text-preset-6">SUBSCRIBE NOW</span>
             </a>
           </div>
 
-            <div class="header__hero__content">
-              <h1 class="header__hero__title">
-                Join the ultimate tech book club
-              </h1>
-              <p class="header__hero__text">
-                Turn your reading time into learning time with fellow tech
-                enthusiasts. Get curated recommendations, join vibrant
-                discussions, and level up your skills one chapter at a time.
-              </p>
-              <a class="btn header__hero-btn" href="">
-                <span class="btn-text">REVIEW MEMBERSHIP OPTIONS</span>
-              </a>
-
-              <div class="header__hero__members">
-                <img
-                  src="./images/Testimonials Container.png"
-                  alt=""
-                  width="110"
-                  height="40"
-                />
-              </div>
+          <div class="card__two">
+            <h3 class="card__texts text-preset-4">Pro</h3>
+            <div class="card__text-one">
+              <h2 class="card__texts-one text-preset-3">$29</h2>
+              <p class="card__text-title text-preset-5">/month</p>
             </div>
 
-            <picture>
-              <source
-              srcset="./images/image-hero-mobile.webp"
-              media="(max-width:375px)"
-              />
-              <source
-              srcset="./images/image-hero-tablet.webp"
-              media="(max-width:850px)"
-              />
-              <source
-              srcset="./images/image-hero-mobile.webp"
-              media="(max-width:375px)"
-              />
-            </picture>
-            <img src="./images/Hero Image Container.png" alt="">
+            <div class="card__title">
+              <img src="./images/icon-check.svg" alt="" />
+              <p class="card__text-title text-preset-5">2 books/month</p>
+            </div>
+            <div class="card__titles">
+              <img src="./images/icon-check.svg" alt="" />
+              <p class="card__text-title text-preset-5">Virtual meetups</p>
+            </div>
+            <a class="card__buttons" href="">
+              <span class="card__button-text text-preset-6">SUBSCRIBE NOW</span>
+            </a>
+          </div>
+
+          <div class="card__three">
+            <h3 class="card__texts text-preset-4">Enterprise</h3>
+            <h2 class="card__textss text-preset-3">Custom</h2>
+
+            <div class="card__title">
+              <img src="./images/icon-check.svg" alt="" />
+              <p class="card__text-title text-preset-5">Team access</p>
+            </div>
+            <div class="card__titles">
+              <img src="./images/icon-check.svg" alt="" />
+              <p class="card__text-title text-preset-5">Private sessions</p>
+            </div>
+            <a class="card__buttonss" href="">
+              <span class="card__button-text text-preset-6">TALK TO US</span>
+            </a>
           </div>
         </div>
       </div>
