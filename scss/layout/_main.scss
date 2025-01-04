@@ -1,0 +1,322 @@
+.sidebar {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    border-radius: 1.2rem;
+  }
+
+  &__text-one {
+    width: 53rem;
+    height: 13rem;
+    margin-bottom: 3.4rem;
+  }
+
+  &__discription {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.4rem;
+    gap: 1.4rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .sidebar {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+  }
+
+  .sidebar__text {
+    margin-right: auto;
+  }
+
+  .sidebar__container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sidebar {
+    margin-top: 6.4rem;
+    margin-bottom: 6.4rem;
+  }
+
+  .sidebar__container {
+    flex-direction: column;
+  }
+
+  .sidebar__text-one {
+    @include typography("Martian Mono", 3.4rem, 1.3, -0.2rem);
+    width: 343px;
+    height: 88px;
+  }
+}
+
+.banner {
+  margin-bottom: 12rem;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+    background-image: url("../../images/pattern-circle.png"),
+      url("../../images/logos-tech.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: top 155px left 205px, top 310px left 575px;
+  }
+
+  &__text {
+    margin-bottom: 2.4rem;
+  }
+
+  &__texts {
+    width: 53rem;
+    height: 11.2rem;
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    border-radius: 1.2rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .banner {
+    margin-bottom: 8rem;
+  }
+
+  .banner__container {
+    flex-direction: column;
+    background-position: top 65px left 180px, top 400px left 575px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .banner {
+    margin-bottom: 6.4rem;
+  }
+
+  .banner__text {
+    @include typography("Martian Mono", 3.4rem, 1.3, -0.2rem);
+    width: 34.3rem;
+    height: 13.3rem;
+  }
+
+  .banner__texts {
+    width: 34.3rem;
+    height: 16.8rem;
+  }
+
+  .banner__container {
+    flex-direction: column;
+    background-position: top 80px left, top 400px left 575px;
+  }
+
+  .banner__title {
+    margin-right: auto;
+  }
+}
+
+.card {
+  &__text {
+    text-align: center;
+    margin-bottom: 6.4rem;
+  }
+
+  &__texts {
+    margin-bottom: 2.4rem;
+  }
+
+  &__discription {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    margin-bottom: 12rem;
+  }
+
+  &__one {
+    width: 28.6rem;
+    height: 35.8rem;
+    border-radius: 8px;
+    border: 1px solid $neutral-200;
+    padding-top: 2.4rem;
+    padding-left: 2.4rem;
+  }
+
+  &__text-one {
+    display: flex;
+    padding: 0 0 2.4rem 0;
+    gap: 8px;
+    align-items: center;
+    border-bottom: 2.4rem;
+    width: 23.8rem;
+    border-bottom: 1px solid $neutral-200;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+    margin-bottom: 1.6rem;
+    margin-top: 2.4rem;
+  }
+
+  &__titles {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+    margin-bottom: 3.2rem;
+  }
+
+  &__button {
+    width: 23.8rem;
+    height: 6.3rem;
+    border: 2px solid $neutral-900;
+    border-radius: 8px;
+    background-color: $light-salmon-50;
+    padding: 2rem 4.2rem;
+  }
+
+  &__buttons {
+    width: 30.2rem;
+    height: 6.3rem;
+    border: 2px solid $neutral-900;
+    border-radius: 8px;
+    background-color: $light-salmon-50;
+    padding: 2rem 7.4rem;
+  }
+
+  &__buttonss {
+    width: 23.8rem;
+    height: 6.3rem;
+    border: 2px solid $neutral-900;
+    border-radius: 8px;
+    background-color: $light-salmon-50;
+    padding: 2rem 5.9rem;
+  }
+
+  &__button:hover {
+    background-color: $light-salmon-500;
+  }
+
+  &__buttons:hover {
+    background-color: $light-salmon-500;
+  }
+
+  &__buttonss:hover {
+    background-color: $light-salmon-500;
+  }
+
+  &__button-text {
+    @include typography("Martian Mono", 1.8rem, 1.3, -0.1rem);
+    color: $neutral-900;
+  }
+
+  &__two {
+    width: 35rem;
+    height: 39rem;
+    border-radius: 8px;
+    border: 1px solid $neutral-200;
+    padding-top: 2.4rem;
+    padding-left: 2.4rem;
+    background-image: url("../../images/pattern-glow.svg");
+    background-repeat: no-repeat;
+    background-position: top left -214px;
+  }
+
+  &__three {
+    width: 28.6rem;
+    height: 35.8rem;
+    border-radius: 8px;
+    border: 1px solid $neutral-200;
+    padding-top: 2.4rem;
+    padding-left: 2.4rem;
+  }
+  &__textss {
+    margin-bottom: 2.4rem;
+    padding: 0 0 2.4rem 0;
+    border-bottom: 2.4rem;
+    width: 23.8rem;
+    border-bottom: 1px solid $neutral-200;
+  }
+}
+@media screen and (max-width: 850px) {
+  .card__text {
+    margin-right: auto;
+    margin-bottom: 4rem;
+  }
+
+  .card__discription {
+    margin-bottom: 8rem;
+    display: grid;
+    gap: 2.4rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "header main"
+      "footer footer";
+  }
+  .card__one {
+    width: 34rem;
+    height: 35.8rem;
+    grid-area: header;
+  }
+
+  .card__two {
+    width: 34rem;
+    height: 35.8rem;
+    grid-area: main;
+  }
+
+  .card__three {
+    width: 34rem;
+    height: 35.8rem;
+    grid-area: footer;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .card__text {
+    @include typography("Martian Mono", 3.4rem, 1.3, -0.2rem);
+    margin-right: auto;
+    margin-bottom: 2.4rem;
+  }
+
+  .card__discription {
+    margin-bottom: 6.4rem;
+    display: grid;
+    gap: 2.4rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+
+  .card__one {
+    width: 34rem;
+    height: 35.6rem;
+    grid-area: header;
+  }
+
+  .card__two {
+    width: 34rem;
+    height: 35.6rem;
+    grid-area: main;
+  }
+
+  .card__three {
+    width: 34rem;
+    height: 35.6rem;
+    grid-area: footer;
+  }
+}
