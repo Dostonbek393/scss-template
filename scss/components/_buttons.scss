@@ -11,11 +11,24 @@
   display: flex;
 }
 
+.btn-texts {
+  display: flex;
+}
+
 .btn-text::after {
   display: inline-block;
   content: " ";
   width: 24px;
   height: 24px;
   background-image: url("../../images/icon-arrow-down.svg");
+  margin-left: 1.6rem;
+}
+
+.btn-texts::after {
+  display: inline-block;
+  content: " ";
+  width: 24px;
+  height: 24px;
+  background-image: url("../../images/icon-arrow-up.svg");
   margin-left: 1.6rem;
 }
